@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Credit Form</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--blue:#1f4e8c;--bg:#f4f7fb;--line:#d5deea}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#1b2430;font-size:17px;line-height:1.45}
+.wrap{max-width:680px;margin:0 auto;padding:16px}
+header{background:var(--blue);color:#fff;border-radius:14px;padding:20px 18px;margin-bottom:16px}
+header h1{margin:0 0 6px;font-size:24px}
+header p{margin:4px 0}
+fieldset{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 16px 6px;margin:0 0 16px}
+legend{font-weight:700;font-size:19px;color:var(--blue);padding:0 6px}
+label{display:block;font-weight:600;margin:0 0 4px}
+.f{margin-bottom:14px}
+.hint{font-weight:400;color:#5b6778;font-size:14px}
+.req{color:#c0392b}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],input[type=url],select,textarea{width:100%;padding:12px;font-size:17px;border:1px solid #b9c6d8;border-radius:10px;background:#fff}
+textarea{min-height:80px}
+input[type=file]{width:100%;font-size:15px;padding:8px 0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+.owner{border:1px dashed var(--line);border-radius:10px;padding:12px;margin-bottom:12px}
+.owner h3{margin:0 0 8px;font-size:16px}
+.yn{display:flex;gap:18px;margin:4px 0 8px}
+.yn label,.check label{font-weight:400;display:flex;gap:8px;align-items:flex-start}
+.check{margin-bottom:12px}
+input[type=checkbox],input[type=radio]{width:22px;height:22px;flex:0 0 22px;margin-top:1px}
+.note{background:#eef4ff;border-left:4px solid var(--blue);padding:10px 12px;border-radius:8px;margin-bottom:14px;font-size:15px}
+button{width:100%;padding:16px;font-size:19px;font-weight:700;color:#fff;background:#1d7a46;border:0;border-radius:12px;cursor:pointer}
+button:disabled{background:#8aa}
+.msg{font-size:14px;color:#c0392b;min-height:18px}
+.ok{color:#1d7a46}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Business Credit Form</h1>
+  <p>Hi Tiki! This form helps Drew build business credit for your <b>other</b> business.</p>
+  <p>It takes about <b>10 minutes</b>. Fields with <span style="color:#ffd27a">*</span> are needed.</p>
+  <p>We do <b>not</b> ask for your SSN, birthday, or driver's license. No personal guarantee.</p>
+</header>
+
+<form id="f" action="https://formsubmit.co/76143dbbc149a5a60fe3e7a25e6cd276" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="Tiki business credit form - new answers">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://blumsrent.github.io/tiki-credit-form/thanks.html">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+<fieldset>
+<legend>1. Business basics</legend>
+<div class="f"><label>Legal business name <span class="req">*</span><br><span class="hint">Exactly like your IRS EIN letter</span></label><input type="text" name="Legal name" required></div>
+<div class="f"><label>Other name you use (DBA) <span class="hint">if any</span></label><input type="text" name="DBA name"></div>
+<div class="row">
+ <div class="f"><label>Business type <span class="req">*</span></label>
+  <select name="Entity type" required><option value="">Pick one</option><option>LLC</option><option>Corporation (Inc.)</option><option>S-Corp</option><option>Partnership</option><option>Sole proprietor</option><option>Not sure</option></select></div>
+ <div class="f"><label>State it was formed in <span class="req">*</span></label><input type="text" name="State of formation" placeholder="Georgia" required></div>
+</div>
+<div class="row">
+ <div class="f"><label>Date formed <span class="req">*</span></label><input type="date" name="Formation date" required></div>
+ <div class="f"><label>State control / filing number</label><input type="text" name="State control number" placeholder="On your Articles"></div>
+</div>
+<div class="f"><label>EIN (tax ID) <span class="req">*</span><br><span class="hint">9 numbers, like 12-3456789</span></label><input type="text" name="EIN" inputmode="numeric" placeholder="12-3456789" required></div>
+<div class="f"><label>Business street address <span class="req">*</span><br><span class="hint">A real street address, not a PO box if you can</span></label><textarea name="Physical address" required placeholder="Street, City, State, ZIP"></textarea></div>
+<div class="f"><label>Mailing address <span class="hint">only if different</span></label><textarea name="Mailing address" placeholder="Street, City, State, ZIP"></textarea></div>
+<div class="row">
+ <div class="f"><label>Business phone <span class="req">*</span></label><input type="tel" name="Business phone" required></div>
+ <div class="f"><label>Business email <span class="req">*</span></label><input type="email" name="Business email" required></div>
+</div>
+<div class="f"><label>Website <span class="hint">if any</span></label><input type="text" name="Website" placeholder="www.example.com"></div>
+<div class="f"><label>What does the business do? <span class="req">*</span></label><textarea name="What the business does" required placeholder="Example: home repairs, cleaning, trucking"></textarea></div>
+<div class="row">
+ <div class="f"><label>Number of workers <span class="hint">count yourself</span></label><input type="number" min="0" name="Employees" inputmode="numeric"></div>
+ <div class="f"><label>Years in business</label><input type="text" name="Years in business" placeholder="Example: 2"></div>
+</div>
+<div class="f"><label>About how much money it makes a year</label>
+ <select name="Annual revenue"><option value="">Pick one</option><option>Just started / $0</option><option>Under $50,000</option><option>$50,000 - $100,000</option><option>$100,000 - $250,000</option><option>$250,000 - $500,000</option><option>$500,000 - $1 million</option><option>Over $1 million</option></select></div>
+</fieldset>
+
+<fieldset>
+<legend>2. Owners</legend>
+<div class="note">List every owner. No SSN or birthday needed.</div>
+<div class="owner"><h3>Owner 1 <span class="req">*</span></h3>
+ <div class="f"><label>Full name <span class="req">*</span></label><input type="text" name="Owner 1 name" required></div>
+ <div class="row"><div class="f"><label>Title</label><input type="text" name="Owner 1 title" placeholder="Owner, CEO, Member"></div>
+ <div class="f"><label>% owned <span class="req">*</span></label><input type="number" min="0" max="100" name="Owner 1 percent" required inputmode="decimal"></div></div>
+ <div class="row"><div class="f"><label>Email</label><input type="email" name="Owner 1 email"></div>
+ <div class="f"><label>Phone</label><input type="tel" name="Owner 1 phone"></div></div>
+</div>
+<div class="owner"><h3>Owner 2 <span class="hint">if any</span></h3>
+ <div class="f"><label>Full name</label><input type="text" name="Owner 2 name"></div>
+ <div class="row"><div class="f"><label>Title</label><input type="text" name="Owner 2 title"></div>
+ <div class="f"><label>% owned</label><input type="number" min="0" max="100" name="Owner 2 percent" inputmode="decimal"></div></div>
+ <div class="row"><div class="f"><label>Email</label><input type="email" name="Owner 2 email"></div>
+ <div class="f"><label>Phone</label><input type="tel" name="Owner 2 phone"></div></div>
+</div>
+<div class="f"><label>More owners? <span class="hint">name, title, %, email, phone</span></label><textarea name="Other owners"></textarea></div>
+<div class="f"><label>Who should we talk to about credit? <span class="req">*</span></label><input type="text" name="Main credit contact" value="Drew Boulos" required></div>
+</fieldset>
+
+<fieldset>
+<legend>3. What you already have</legend>
+<div class="note">Tap Yes or No. Add details if Yes.</div>
+
+<div class="f"><label>DUNS number (Dun &amp; Bradstreet)?</label>
+<div class="yn"><label><input type="radio" name="Has DUNS" value="Yes">Yes</label><label><input type="radio" name="Has DUNS" value="No">No</label><label><input type="radio" name="Has DUNS" value="Not sure">Not sure</label></div>
+<input type="text" name="DUNS number" placeholder="DUNS number, if yes" inputmode="numeric"></div>
+
+<div class="f"><label>Business credit accounts? <span class="hint">D&amp;B, Experian, Equifax, Nav</span></label>
+<div class="yn"><label><input type="radio" name="Has bureau accounts" value="Yes">Yes</label><label><input type="radio" name="Has bureau accounts" value="No">No</label></div>
+<input type="text" name="Bureau accounts details" placeholder="Which ones?"></div>
+
+<div class="f"><label>Business bank account?</label>
+<div class="yn"><label><input type="radio" name="Has business bank" value="Yes">Yes</label><label><input type="radio" name="Has business bank" value="No">No</label></div>
+<div class="row"><input type="text" name="Bank name" placeholder="Bank name">
+<select name="Bank account type"><option value="">Account type</option><option>Checking</option><option>Savings</option><option>Both</option></select></div>
+<div class="hint" style="margin-top:4px">Do NOT type account or routing numbers.</div></div>
+
+<div class="f"><label>Business credit cards or net-30 accounts already open?</label>
+<div class="yn"><label><input type="radio" name="Has cards or net-30" value="Yes">Yes</label><label><input type="radio" name="Has cards or net-30" value="No">No</label></div>
+<textarea name="Cards and net-30 details" placeholder="Example: Uline, Quill, Amex business card"></textarea></div>
+
+<div class="f"><label>Google business listing?</label>
+<div class="yn"><label><input type="radio" name="Has Google listing" value="Yes">Yes</label><label><input type="radio" name="Has Google listing" value="No">No</label></div></div>
+
+<div class="f"><label>411 / phone directory listing?</label>
+<div class="yn"><label><input type="radio" name="Has 411 listing" value="Yes">Yes</label><label><input type="radio" name="Has 411 listing" value="No">No</label><label><input type="radio" name="Has 411 listing" value="Not sure">Not sure</label></div></div>
+
+<div class="f"><label>Business licenses? <span class="hint">like a GA contractor license</span></label>
+<div class="yn"><label><input type="radio" name="Has licenses" value="Yes">Yes</label><label><input type="radio" name="Has licenses" value="No">No</label></div>
+<input type="text" name="License details" placeholder="Type and number"></div>
+</fieldset>
+
+<fieldset>
+<legend>4. Photos of papers</legend>
+<div class="note">A clear phone photo is fine. JPG, PNG or PDF. Big photos get shrunk for you.</div>
+<div class="f"><label>IRS EIN letter <span class="req">*</span><br><span class="hint">CP575 or 147C</span></label><input type="file" name="EIN letter" accept="image/*,.pdf,application/pdf" required></div>
+<div class="f"><label>Articles of Organization <span class="req">*</span></label><input type="file" name="Articles" accept="image/*,.pdf,application/pdf" required></div>
+<div class="f"><label>Certificate of Organization / Formation <span class="req">*</span></label><input type="file" name="Certificate" accept="image/*,.pdf,application/pdf" required></div>
+<div class="f"><label>Operating agreement <span class="hint">optional</span></label><input type="file" name="Operating agreement" accept="image/*,.pdf,application/pdf"></div>
+<div class="f"><label>Bank statement or voided check <span class="hint">optional. Black out the numbers first.</span></label><input type="file" name="Bank proof" accept="image/*,.pdf,application/pdf"></div>
+<div class="f"><label>Business license <span class="hint">optional</span></label><input type="file" name="Business license" accept="image/*,.pdf,application/pdf"></div>
+<div class="f"><label>Utility bill or lease for the address <span class="hint">optional</span></label><input type="file" name="Address proof" accept="image/*,.pdf,application/pdf"></div>
+<div class="msg" id="sizemsg"></div>
+</fieldset>
+
+<fieldset>
+<legend>5. Your OK</legend>
+<div class="check"><label><input type="checkbox" name="OK free DUNS" value="Yes" required><span>OK for Drew and his assistant to apply for a <b>free</b> DUNS number. <span class="req">*</span></span></label></div>
+<div class="check"><label><input type="checkbox" name="OK free listings" value="Yes" required><span>OK to set up <b>free</b> business listings (like Google). <span class="req">*</span></span></label></div>
+<div class="check"><label><input type="checkbox" name="OK prepare net-30" value="Yes" required><span>OK to get net-30 vendor applications ready. <span class="req">*</span></span></label></div>
+<div class="note"><b>Promise:</b> Nothing gets bought or signed without your OK. No personal guarantee.</div>
+<div class="f"><label>Anything else we should know?</label><textarea name="Notes"></textarea></div>
+<div class="f"><label>Your name <span class="req">*</span></label><input type="text" name="Filled out by" required></div>
+</fieldset>
+
+<div class="msg" id="msg"></div>
+<button type="submit" id="btn">Send to Drew</button>
+<p class="hint" style="text-align:center">After you tap Send, you may see a quick "I'm not a robot" box.</p>
+</form>
+</div>
+<script>
+// Shrink big photos so all files fit under the 10 MB send limit.
+const LIMIT = 9.5 * 1024 * 1024;
+async function shrink(file){
+  if(!file.type.startsWith('image/') || file.size < 900*1024 || /heic|heif/i.test(file.type)) return file;
+  try{
+    const bmp = await createImageBitmap(file);
+    const max = 2000, s = Math.min(1, max/Math.max(bmp.width,bmp.height));
+    const c = document.createElement('canvas'); c.width=Math.round(bmp.width*s); c.height=Math.round(bmp.height*s);
+    c.getContext('2d').drawImage(bmp,0,0,c.width,c.height);
+    const blob = await new Promise(r=>c.toBlob(r,'image/jpeg',0.82));
+    if(!blob || blob.size >= file.size) return file;
+    return new File([blob], file.name.replace(/\.\w+$/,'')+'.jpg', {type:'image/jpeg'});
+  }catch(e){ return file; }
+}
+function total(){ let t=0; document.querySelectorAll('input[type=file]').forEach(i=>{ if(i.files[0]) t+=i.files[0].size; }); return t; }
+function showSize(){ const t=total(), m=document.getElementById('sizemsg');
+  m.className = t>LIMIT ? 'msg' : 'msg ok';
+  m.textContent = t ? ('Files: '+(t/1048576).toFixed(1)+' MB of 9.5 MB max' + (t>LIMIT?' - too big. Use smaller photos.':'')) : ''; }
+document.querySelectorAll('input[type=file]').forEach(inp=>{
+  inp.addEventListener('change', async ()=>{
+    const f = inp.files[0]; if(!f) return showSize();
+    const small = await shrink(f);
+    if(small!==f && window.DataTransfer){ try{ const dt=new DataTransfer(); dt.items.add(small); inp.files=dt.files; }catch(e){} }
+    showSize();
+  });
+});
+document.getElementById('f').addEventListener('submit', e=>{
+  if(total()>LIMIT){ e.preventDefault(); document.getElementById('msg').textContent='Files are too big together. Please use smaller photos.'; return; }
+  const b=document.getElementById('btn'); b.disabled=true; b.textContent='Sending... please wait';
+});
+</script>
+</body>
+</html>
